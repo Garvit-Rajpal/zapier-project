@@ -38,6 +38,7 @@ model Trigger {
   triggerId String
   type      AvailableTriggers @relation(fields: [triggerId], references: [id])
   actions   Action[]
+  sortingOrder Int @default(0)
 }
 
 model AvailableTriggers {
@@ -53,6 +54,7 @@ model Action {
   actionId  String
   trigger   Trigger          @relation(fields: [triggerId], references: [id])
   type      AvailableActions @relation(fields: [actionId], references: [id])
+  sortingOrder Int @default(0)
 }
 
 model AvailableActions {
