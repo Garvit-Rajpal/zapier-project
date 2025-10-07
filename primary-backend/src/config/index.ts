@@ -1,0 +1,1 @@
+export const JWT_SECRET = "zapier_hash_key_1235"
