@@ -1,5 +1,5 @@
 import { Router } from "express";
-import { authMiddleware } from "../middleware/authMiddleware";
+// import { authMiddleware } from "../middleware/authMiddleware";
 import { SignUpSchema,LoginSchema } from "../types";
 import { prisma } from "../db"
 import bcrypt from "bcrypt";
